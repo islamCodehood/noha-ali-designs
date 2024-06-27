@@ -1,12 +1,10 @@
 import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
+
 import "./globals.css";
 import TopNav from "./components/top-nav/top-nav.component";
+import Logo from "./components/logo/logo.component";
+import { openSans } from "./fonts/fonts";
 
-const publicSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-})
 
 export const metadata: Metadata = {
   title: "Noha Ali Designs",
@@ -20,8 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.className} px-16 pt-6`}>
+      <body className={`${openSans.className} px-6 pt-3 md:px-12 md:pt-6 lg:px-16 lg:pt-6`}>
+        <header className="">
+        <Logo />
         <TopNav />
+        </header>
         {children}
         </body>
     </html>

@@ -1,5 +1,6 @@
 import ArrowBtn from '../arrow-btn/arrow-btn.component';
 import { abrilFatface } from '@/app/fonts/fonts';
+import ServicesList from '../services-list/services-list.component';
 
 const ServicesSection = () => {
 	return (
@@ -17,9 +18,9 @@ const ServicesSection = () => {
 					</p>
 				</div>
 			</div>
-			<div className='w-full h-[250px] rounded-3xl border relative bg-cyan-600 shadow-lg flex-shrink-0'></div>
-			<div className='w-full h-[250px] rounded-3xl border relative bg-cyan-600 shadow-lg flex-shrink-0'></div>
-			<div className='w-full h-[250px] rounded-3xl border relative bg-cyan-600 shadow-lg flex-shrink-0'></div>
+			<div className='w-full flex flex-col items-center gap-12'>
+			<ServicesList />
+			</div>
 		</section>
 	);
 };

@@ -3,6 +3,7 @@ import { abrilFatface } from '@/app/fonts/fonts';
 import HeroImage from '../components/hero-image/hero-image.component';
 import FirstSection from '../components/first-section/first-section.component';
 import ServicesSection from '../components/services-section/services-section.component';
+import RecentSection from '../components/recent-section/recent-section.component';
 
 export default function Home() {
 	return (
@@ -21,6 +22,9 @@ export default function Home() {
 				</div>
 				<div className="w-full my-20">
 					<ServicesSection />
+				</div>
+				<div className="w-full my-20">
+					<RecentSection />
 				</div>
 				{/* <img src="/images/logo.png" alt="logo" /> */}
 				{/* <p className="text-stale-500 text-4xl">Coming soon</p> */}

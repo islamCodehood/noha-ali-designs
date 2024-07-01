@@ -18,7 +18,7 @@ const ServicesSection = () => {
 					</p>
 				</div>
 			</div>
-			<div className='w-full flex flex-col items-center gap-12'>
+			<div className='w-full flex flex-col items-center gap-12 xl:px-24 2xl:px-56 '>
 			<ServicesList />
 			</div>
 		</section>

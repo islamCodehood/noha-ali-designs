@@ -4,10 +4,14 @@ import Counters from '../counters/counters.component';
 const FirstSection = () => {
 	return (
 		<section className='flex flex-col items-center lg:items-start lg:flex-row-reverse lg:justify-between gap-12'>
+			<h2
+				className={`${abrilFatface.className} lg:hidden text-3xl text-slate-700 font-thin`}>
+				We tailor interior styles to your unique taste
+			</h2>
 			<div className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-1/2 h-[450px] rounded-3xl border relative bg-cyan-700 shadow-lg flex-shrink-0'></div>
 			<div className='space-y-4'>
 				<h2
-					className={`${abrilFatface.className} text-3xl text-slate-700 font-thin`}>
+					className={`${abrilFatface.className} hidden lg:block text-3xl text-slate-700 font-thin`}>
 					We tailor interior styles to your unique taste
 				</h2>
 				<p className='text-lg'>
